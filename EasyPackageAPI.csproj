@@ -8,7 +8,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <EasyDeliveryPath>/home/fab/.local/share/Steam/steamapps/common/Easy Delivery Co/</EasyDeliveryPath>
-    <ModProfilePath>/home/fab/.local/share/com.kesomannen.gale/easy-delivery-co/profiles/Default/BepInEx/plugins/EasyPackageAPI/</ModProfilePath>
+    <ModProfilePath>/home/fab/.local/share/com.kesomannen.gale/easy-delivery-co/profiles/Default/BepInEx/plugins/</ModProfilePath>
       <RestoreAdditionalProjectSources>
           https://api.nuget.org/v3/index.json;
           https://nuget.bepinex.dev/v3/index.json;
@@ -52,6 +52,6 @@
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="cp &quot;$(ProjectDir)bin/Debug/net472/EasyPackageAPI.dll&quot; &quot;$(ModProfilePath)/&quot;" />
+    <Exec Command="cp &quot;$(ProjectDir)bin/Debug/net472/EasyPackageAPI.dll&quot; &quot;$(ModProfilePath)/EasyPackageAPI/&quot;" />
   </Target>
 </Project>

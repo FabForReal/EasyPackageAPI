@@ -6,9 +6,9 @@ internal static class ShopLoader
 { 
      public static void Load(ShopInfo shopInfo)
      {
-         if (PackageRegister.Packages == null) return;
+         if (PackageRegistry.Packages == null) return;
 
-         foreach (Package p in PackageRegister.Packages)
+         foreach (Package p in PackageRegistry.Packages)
          {
              if (shopInfo.payloads.Contains(p.GameObject)) return;
              

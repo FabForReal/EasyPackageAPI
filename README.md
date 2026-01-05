@@ -8,8 +8,8 @@ This mod does not add any packages of its own.
 
 ### Preamble
 
-The registering of a custom package with the API is extremely easy, however the setup for a creation 
-for a prefab is a quite tedious process.
+The registering of a custom package with the API is extremely easy, however the setup for the creation
+of prefabs is a quite tedious process.
 
 I'm not going into details for this rn, but basically you would need to do these things:
 1. Extract the assets using a tool from the game
